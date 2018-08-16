@@ -18,7 +18,7 @@ from setuptools import setup, find_packages
 setup(
     name='bits-progressbar',
 
-    version='1',
+    version='1.2',
 
     description='BITS Progressbar',
     long_description='',
@@ -29,5 +29,9 @@ setup(
     license='Apache Software License',
 
     packages=find_packages(),
+    install_requires=[
+        'progressbar-latest',
+    ],
+
     zip_safe=False,
 )
