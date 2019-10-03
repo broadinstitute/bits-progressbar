@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Progress class file."""
 
 from progressbar import ProgressBar
@@ -12,6 +13,7 @@ from progressbar import ProgressBar
 # progress = Progress().start(verbose=self.verbose)
 # progress.update(groups_list)
 # progress.finish(groups_list)
+
 
 class Progress(object):
     """Progress class."""
@@ -43,7 +45,8 @@ class Progress(object):
 
     def start_timer(self):
         """Start progress."""
-        from progressbar import AnimatedMarker, Counter, SimpleProgress, Timer
+        from progressbar import AnimatedMarker, SimpleProgress, Timer
+        # from progressbar import AnimatedMarker, Counter, SimpleProgress, Timer
         widgets = [
             '  ',
             AnimatedMarker(),
